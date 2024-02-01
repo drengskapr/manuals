@@ -95,8 +95,11 @@ vault write auth/oidc/config \
 Let's explain the options:
 
 `oidc_discovery_url` &mdash; hostname of your Openunison instance
+
 `oidc_client_id` &mdash; vault client id; must be the same as `clientId` in Trust
+
 `oidc_client_secret` &mdash; vault client secret; must match with the value of the `vault` key in `orchestra-secrets-source` secret
+
 `default_role` &mdash; default vault role; must match with the oidc role configured earlier
 
 ### Create required policies
